@@ -1,6 +1,6 @@
 # WinForms DataGrid - How to avoid data collisions when users drag cards of a TileView connected to an SQL source
 
-When you drag-and-drop cards of a TileView connected to a SQL source, a record index collision may occur: moving a card marks the data source record as "to be removed", and a new record (with an updated data source index) is created instead. However, the previous record is not removed, and as a result, the data row is duplicated.
+When you drag-and-drop cards of a TileView connected to a SQL data source, a record index collision may occur: moving a card marks the data source record as "to be removed", and a new record (with an updated data source index) is created instead. However, the previous record is not removed, and as a result, the data row is duplicated.
 
 To overcome this issue, create a data source column that will store card positions within their groups, and update these values whenever a user drags a card.
 
