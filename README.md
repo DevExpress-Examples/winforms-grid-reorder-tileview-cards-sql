@@ -10,7 +10,7 @@ When you drag-and-drop cards of a TileView connected to a SQL data source, a rec
 To overcome this issue, create a data source column that will store card positions within their groups, and update these values whenever a user drags a card.
 
 ```cs
-// Sort by the "IndexInGroup" column
+/ Sort by the "IndexInGroup" column
 colIndexInGroup.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
 tileView1.BeforeItemDrop += TileView1_BeforeItemDrop;
 
