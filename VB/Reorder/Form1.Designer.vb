@@ -1,5 +1,7 @@
-﻿Namespace Reorder
-    Partial Public Class Form1
+Namespace Reorder
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,27 +12,27 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim tableColumnDefinition1 As New DevExpress.XtraEditors.TableLayout.TableColumnDefinition()
-            Dim tableRowDefinition1 As New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
-            Dim tableRowDefinition2 As New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
-            Dim tableRowDefinition3 As New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
-            Dim tileViewItemElement1 As New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-            Dim tileViewItemElement2 As New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-            Dim tileViewItemElement3 As New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+            Dim tableColumnDefinition1 As DevExpress.XtraEditors.TableLayout.TableColumnDefinition = New DevExpress.XtraEditors.TableLayout.TableColumnDefinition()
+            Dim tableRowDefinition1 As DevExpress.XtraEditors.TableLayout.TableRowDefinition = New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
+            Dim tableRowDefinition2 As DevExpress.XtraEditors.TableLayout.TableRowDefinition = New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
+            Dim tableRowDefinition3 As DevExpress.XtraEditors.TableLayout.TableRowDefinition = New DevExpress.XtraEditors.TableLayout.TableRowDefinition()
+            Dim tileViewItemElement1 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+            Dim tileViewItemElement2 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+            Dim tileViewItemElement3 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
             Me.colText = New DevExpress.XtraGrid.Columns.TileViewColumn()
             Me.colIndexInGroup = New DevExpress.XtraGrid.Columns.TileViewColumn()
             Me.gridControl1 = New DevExpress.XtraGrid.GridControl()
@@ -44,10 +46,10 @@
             Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
             Me.skinDropDownButtonItem1 = New DevExpress.XtraBars.SkinDropDownButtonItem()
             Me.skinPaletteDropDownButtonItem1 = New DevExpress.XtraBars.SkinPaletteDropDownButtonItem()
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.tileView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.toolbarFormControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.toolbarFormManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.tileView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.toolbarFormControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.toolbarFormManager1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' colText
@@ -80,18 +82,18 @@
             Me.gridControl1.Name = "gridControl1"
             Me.gridControl1.Size = New System.Drawing.Size(1302, 555)
             Me.gridControl1.TabIndex = 0
-            Me.gridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.tileView1})
+            Me.gridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.tileView1})
             ' 
             ' tileView1
             ' 
-            Me.tileView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() { Me.colText, Me.colGroupId, Me.colIndexInGroup})
+            Me.tileView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colText, Me.colGroupId, Me.colIndexInGroup})
             Me.tileView1.ColumnSet.GroupColumn = Me.colGroupId
             Me.tileView1.DetailHeight = 766
             Me.tileView1.GridControl = Me.gridControl1
             Me.tileView1.Name = "tileView1"
             Me.tileView1.OptionsDragDrop.AllowDrag = True
             Me.tileView1.OptionsTiles.LayoutMode = DevExpress.XtraGrid.Views.Tile.TileViewLayoutMode.Kanban
-            Me.tileView1.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() { New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colGroupId, DevExpress.Data.ColumnSortOrder.Ascending)})
+            Me.tileView1.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colGroupId, DevExpress.Data.ColumnSortOrder.Ascending)})
             Me.tileView1.TileColumns.Add(tableColumnDefinition1)
             Me.tileView1.TileRows.Add(tableRowDefinition1)
             Me.tileView1.TileRows.Add(tableRowDefinition2)
@@ -144,7 +146,7 @@
             Me.toolbarFormManager1.DockControls.Add(Me.barDockControlLeft)
             Me.toolbarFormManager1.DockControls.Add(Me.barDockControlRight)
             Me.toolbarFormManager1.Form = Me
-            Me.toolbarFormManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.skinDropDownButtonItem1, Me.skinPaletteDropDownButtonItem1})
+            Me.toolbarFormManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.skinDropDownButtonItem1, Me.skinPaletteDropDownButtonItem1})
             Me.toolbarFormManager1.MaxItemId = 2
             ' 
             ' barDockControlTop
@@ -206,30 +208,39 @@
             Me.Name = "Form1"
             Me.Text = "How to Implement a Sortable Column"
             Me.ToolbarFormControl = Me.toolbarFormControl1
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.tileView1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.toolbarFormControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.toolbarFormManager1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.tileView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.toolbarFormControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.toolbarFormManager1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private gridControl1 As DevExpress.XtraGrid.GridControl
+
         Private tileView1 As DevExpress.XtraGrid.Views.Tile.TileView
+
         Private colText As DevExpress.XtraGrid.Columns.TileViewColumn
+
         Private colGroupId As DevExpress.XtraGrid.Columns.TileViewColumn
+
         Private colIndexInGroup As DevExpress.XtraGrid.Columns.TileViewColumn
+
         Private toolbarFormControl1 As DevExpress.XtraBars.ToolbarForm.ToolbarFormControl
+
         Private toolbarFormManager1 As DevExpress.XtraBars.ToolbarForm.ToolbarFormManager
+
         Private barDockControlTop As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlBottom As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlLeft As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlRight As DevExpress.XtraBars.BarDockControl
+
         Private skinDropDownButtonItem1 As DevExpress.XtraBars.SkinDropDownButtonItem
+
         Private skinPaletteDropDownButtonItem1 As DevExpress.XtraBars.SkinPaletteDropDownButtonItem
     End Class
 End Namespace
-
