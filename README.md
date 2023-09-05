@@ -3,14 +3,14 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1105093)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WinForms DataGrid - How to avoid data collisions when users drag cards of a TileView connected to an SQL source
+# WinForms Data Grid - How to avoid data conflicts when users drag cards of a TileView connected to a SQL source
 
-When you drag-and-drop cards of a TileView connected to a SQL data source, a record index collision may occur: moving a card marks the data source record as "to be removed", and a new record (with an updated data source index) is created instead. However, the previous record is not removed, and as a result, the data row is duplicated.
+When you drag-and-drop cards of a TileView connected to a SQL data source, a record index collision may occur. Moving a card marks the data source record as "to be removed", and a new record (with an updated data source index) is created instead. The previous record is not removed. As a result, the data row is duplicated.
 
-To overcome this issue, create a data source column that will store card positions within their groups, and update these values whenever a user drags a card.
+This example shows how to avoid this issue. Create a column in a data source column to store the position of cards within their groups. Update the position of a card every time the user drags the card.
 
 ```cs
-/ Sort by the "IndexInGroup" column
+// Sort by the "IndexInGroup" column
 colIndexInGroup.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
 tileView1.BeforeItemDrop += TileView1_BeforeItemDrop;
 
@@ -74,9 +74,11 @@ Private Sub TileView1_BeforeItemDrop(ByVal sender As Object, ByVal e As BeforeIt
 End Sub
 ```
 
-## Files to Look At
+
+## Files to Review
 
 - [Form1.cs](./CS/Reorder/Form1.cs) (VB: [Form1.vb](./VB/Reorder/Form1.vb))
+
 
 ## Documentation
 
