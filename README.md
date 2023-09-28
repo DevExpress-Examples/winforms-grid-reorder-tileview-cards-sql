@@ -7,7 +7,7 @@
 
 When you drag-and-drop cards of a TileView connected to a SQL data source, a record index collision may occur. Moving a card marks the data source record as "to be removed", and a new record (with an updated data source index) is created instead. The previous record is not removed. As a result, the data row is duplicated.
 
-This example shows how to avoid this issue. Create a column in a data source column to store the position of cards within their groups. Update the position of a card every time the user drags the card.
+This example shows how to avoid this issue. Create a column in the data source to store the position of cards within their groups. Update the position of a card every time the user drags the card.
 
 ```cs
 // Sort by the "IndexInGroup" column
